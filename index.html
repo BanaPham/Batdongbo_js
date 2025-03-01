@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Log-in</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="flex justify-center z-99 w-auto h-10">
+      <button>
+        <box-icon type='solid' name='zap'></box-icon>
+        <a class="mr-5 bg-green-500 px-4  py-2 rounded-sm hover:bg-green-600" href="/home" data-link>Trang chủ</a>
+      </button>
+      <button >
+          <box-icon type='solid' name='home'></box-icon>
+          <a class="mr-5 bg-green-500 px-4 py-2 rounded-sm hover:bg-green-600" href="/" data-link>Đăng nhập</a>
+      </button>
+      <button >
+          <box-icon type='solid' name='videos'></box-icon>
+          <a class="bg-green-500 px-4 py-2 rounded-sm hover:bg-green-600" href="/log" data-link>Đăng kí</a>
+      </button>
+    </div>
+    <script src="/src/main.js"></script>
   </body>
 </html>
